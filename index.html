@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Mehnaazzzzzz ❤️</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background:
+        radial-gradient(circle at top, #641952, #260021 55%, #090008);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =========================
+   PAGES
+========================= */
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 30px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================
+   TEXT
+========================= */
+
+h1 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    color: #f2d4eb;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.glow {
+    color: #ff9de2;
+
+    text-shadow:
+        0 0 10px #ff62d2,
+        0 0 25px #ff62d2,
+        0 0 45px #ff62d2;
+}
+
+/* =========================
+   FLOATING STARS
+========================= */
+
+.star {
+    position: fixed;
+    color: white;
+    font-size: 17px;
+    opacity: .6;
+    pointer-events: none;
+    animation: floatingStar 5s infinite ease-in-out;
+}
+
+@keyframes floatingStar {
+
+    0%, 100% {
+        transform: translateY(0);
+        opacity: .3;
+    }
+
+    50% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+}
+
+/* =========================
+   PASSWORD
+========================= */
+
+.lock {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: lockFloat 2s infinite ease-in-out;
+}
+
+@keyframes lockFloat {
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+.password-box {
+    width: 100%;
+    max-width: 360px;
+}
+
+input {
+    width: 100%;
+    padding: 16px 20px;
+
+    border-radius: 30px;
+    border: 1px solid #ffffff40;
+
+    background: #ffffff12;
+    color: white;
+
+    outline: none;
+
+    text-align: center;
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: #dcbfd8;
+}
+
+button {
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff62bd,
+            #9d62ff
+        );
+
+    box-shadow:
+        0 8px 30px #ff5cc650;
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+.error {
+    display: none;
+    color: #ff9fbe;
+    margin-top: 12px;
+}
+
+/* =========================
+   SURPRISE
+========================= */
+
+.gift {
+    font-size: 100px;
+    margin-bottom: 15px;
+
+    animation:
+        giftPulse 1.5s infinite;
+}
+
+@keyframes giftPulse {
+
+    50% {
+        transform:
+            scale(1.12)
+            rotate(2deg);
+    }
+
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    width: 100%;
+    max-width: 720px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffafd,
+            #fff1f8
+        );
+
+    color: #351c31;
+
+    padding: 40px 32px;
+
+    border-radius: 25px;
+
+    text-align: left;
+
+    line-height: 1.85;
+
+    box-shadow:
+        0 25px 70px #00000080;
+
+    margin: 20px 0 30px;
+
+    position: relative;
+}
+
+.letter::before {
+    content: "❤️";
+
+    position: absolute;
+
+    top: -22px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    font-size: 40px;
+}
+
+.letter h2 {
+    text-align: center;
+    color: #9b3e80;
+    margin-bottom: 28px;
+}
+
+.letter p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.letter strong {
+    color: #8e356f;
+}
+
+/* =========================
+   FINAL PAGE
+========================= */
+
+.final-cake {
+    font-size: 100px;
+
+    animation:
+        cakePulse 1.4s infinite;
+}
+
+@keyframes cakePulse {
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+.final-message {
+    max-width: 650px;
+
+    color: #f6dff2;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin:
+        15px auto 30px;
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+
+    width: 9px;
+    height: 9px;
+
+    top: -15px;
+
+    animation:
+        confettiFall 4s linear forwards;
+
+    pointer-events: none;
+}
+
+@keyframes confettiFall {
+
+    to {
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .letter {
+        padding: 35px 20px 25px;
+    }
+
+    .letter p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .gift {
+        font-size: 80px;
+    }
+
+    .final-cake {
+        font-size: 80px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING STARS -->
+
+<div class="star" style="left:8%;top:15%;">✦</div>
+<div class="star" style="left:85%;top:18%;">✧</div>
+<div class="star" style="left:18%;top:70%;">✦</div>
+<div class="star" style="left:90%;top:75%;">✧</div>
+<div class="star" style="left:50%;top:8%;">✦</div>
+<div class="star" style="left:65%;top:55%;">✧</div>
+
+
+<!-- =====================================================
+     PAGE 1 - PASSWORD
+===================================================== -->
+
+<section
+    id="passwordPage"
+    class="page active"
+>
+
+    <div class="lock">
+        🔐
+    </div>
+
+    <h1>
+        A Little Secret Awaits...
+    </h1>
+
+    <p class="subtitle">
+
+        Only the birthday girl can enter ✨
+
+        <br>
+
+        Something special has been prepared
+        just for you.
+
+    </p>
+
+
+    <div class="password-box">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter the secret password"
+        >
+
+        <button
+            onclick="checkPassword()"
+        >
+            Unlock My Surprise 💗
+        </button>
+
+        <p
+            id="error"
+            class="error"
+        >
+            Hmm... that's not the secret password 😌
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 2 - SURPRISE
+===================================================== -->
+
+<section
+    id="surprisePage"
+    class="page"
+>
+
+    <div class="gift">
+        🎁
+    </div>
+
+    <h1>
+
+        Hey
+
+        <span class="glow">
+            Mehnaazzzzzz
+        </span>
+
+        💕
+
+    </h1>
+
+    <p class="subtitle">
+
+        You finally unlocked the secret...
+
+    </p>
+
+    <h2>
+        There is a surprise waiting for you ✨
+    </h2>
+
+    <p class="subtitle">
+
+        But this is only the beginning...
+
+    </p>
+
+    <button
+        onclick="showPage('letterPage')"
+    >
+        Open Your Surprise 💗 →
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 3 - LETTER
+===================================================== -->
+
+<section
+    id="letterPage"
+    class="page"
+>
+
+    <h1>
+        A Letter For You 💌
+    </h1>
+
+
+    <div class="letter">
+
+        <h2>
+            Hello Mehnaazuuu ❤️
+        </h2>
+
+
+        <p>
+
+            First of all,
+            <strong>
+                a very, very Happy Birthday to you!
+            </strong>
+            🎂❤️
+
+        </p>
+
+
+        <p>
+
+            May Allah bless you with all the happiness,
+            peace, success, prosperity, and love that you deserve.
+            On your special day, more than anything,
+            I just want to wish that you always keep smiling
+            and that no matter what situation life puts you in,
+            you always find the strength to face it
+            and come out even stronger.
+
+        </p>
+
+
+        <p>
+
+            You are honestly a very special person in my life.
+            You are not just someone who came into my life
+            and stayed for a while.
+            You are someone who has taught me so many things,
+            especially about life.
+            You showed me many things practically,
+            helped me understand situations differently,
+            and guided me through so many moments.
+            A lot of what I have learned and experienced
+            has a little part of you in it.
+
+        </p>
+
+
+        <p>
+
+            And that's something
+            <strong>
+                I will always be grateful for.
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            There have been good moments,
+            difficult moments, misunderstandings,
+            and situations between us that I may not always
+            know how to explain.
+            But when I look at everything as a whole,
+            I don't want to remember you only through those situations.
+            I want to remember all the conversations,
+            the laughs, the advice, the little moments,
+            and all the times you were simply there.
+
+        </p>
+
+
+        <p>
+
+            You have been someone with whom
+            I could share my happiness and my sadness.
+            Someone I could talk to about things
+            that I couldn't easily tell everyone else.
+            And honestly,
+            I want that to remain the same.
+
+        </p>
+
+
+        <p>
+
+            I don't know what the future will bring
+            or how life will change us,
+            but I genuinely want you to have a place
+            in my life for a very long time.
+            I want to see you happy, successful,
+            strong, and becoming the person
+            you always want to be.
+
+        </p>
+
+
+        <p>
+
+            And if there is one thing
+            I want you to remember from this letter,
+            it's this:
+
+        </p>
+
+
+        <p style="text-align:center;">
+
+            <strong>
+                I am really grateful that I got
+                to know someone like you. ❤️
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            Thank you for everything you've taught me,
+            for every moment you've shared with me,
+            for guiding me when I needed it,
+            and simply for being
+            <strong>you</strong>.
+
+        </p>
+
+
+        <p>
+
+            I hope this new year of your life
+            brings you everything you've been wishing for.
+            May Allah protect you, guide you,
+            give you strength during difficult times,
+            and fill your life with countless reasons
+            to smile.
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Once again, happiest birthday to you,
+                Mehnaazuuu! 🎂❤️
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            Keep smiling,
+            keep shining,
+            and please never lose the person you are.
+
+        </p>
+
+
+        <p style="text-align:center;">
+
+            <strong>
+                Happy Birthday to one of the most
+                special people in my life. ❤️
+            </strong>
+
+        </p>
+
+    </div>
+
+
+    <button
+        onclick="
+            showPage('finalPage');
+            startConfetti();
+        "
+    >
+        One Last Surprise 🎀
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 4 - FINAL WISHES
+===================================================== -->
+
+<section
+    id="finalPage"
+    class="page"
+>
+
+    <div class="final-cake">
+        🎂
+    </div>
+
+
+    <h1>
+
+        Happy Birthday
+
+        <br>
+
+        <span class="glow">
+            Mehnaazzzzzz
+        </span>
+
+        🎉
+
+    </h1>
+
+
+    <p class="final-message">
+
+        May your birthday be filled with
+        laughter, happiness, peace,
+        and beautiful memories. 💕
+
+        <br><br>
+
+        May Allah bless you with everything
+        your heart wishes for and guide you
+        through every chapter of your life. ✨
+
+        <br><br>
+
+        May you always have the strength
+        to face every situation,
+        the courage to follow your dreams,
+        and countless reasons to smile. ❤️
+
+        <br><br>
+
+        Keep smiling.
+        Keep shining.
+        Keep being YOU. 🌸
+
+        <br><br>
+
+        <strong>
+            Happy Birthday once again,
+            Mehnaazzzzzz! 🥳🎂💗
+        </strong>
+
+    </p>
+
+
+    <button
+        onclick="location.reload()"
+    >
+        Replay The Surprise 🔄
+    </button>
+
+</section>
+
+
+<script>
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+const correctPassword = "121206";
+
+
+function checkPassword() {
+
+    const enteredPassword =
+        document.getElementById("password").value;
+
+    const error =
+        document.getElementById("error");
+
+
+    if (enteredPassword === correctPassword) {
+
+        /*
+        Open the surprise in a new tab.
+        */
+
+        const newTab =
+            window.open("", "_blank");
+
+
+        if (newTab) {
+
+            newTab.document.write(`
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Birthday Surprise ❤️
+</title>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #641952,
+            #260021 55%,
+            #090008
+        );
+
+}
+
+.box {
+
+    max-width: 650px;
+
+    animation:
+        appear 1.3s ease;
+
+}
+
+.gift {
+
+    font-size: 100px;
+
+    animation:
+        pulse 1.5s infinite;
+
+}
+
+h1 {
+
+    font-size: 42px;
+
+    line-height: 1.3;
+
+}
+
+.name {
+
+    color: #ff9de2;
+
+    text-shadow:
+        0 0 10px #ff6ed5,
+        0 0 25px #ff6ed5;
+
+}
+
+p {
+
+    color: #ead1e7;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+button {
+
+    border: none;
+
+    padding:
+        15px 35px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff62bd,
+            #9f62ff
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    box-shadow:
+        0 8px 30px #ff5cc650;
+
+}
+
+@keyframes pulse {
+
+    50% {
+        transform:
+            scale(1.15);
+    }
+
+}
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<div class="gift">
+🎁
+</div>
+
+
+<h1>
+
+Hey
+
+<span class="name">
+Mehnaazzzzzz
+</span>
+
+💕
+
+</h1>
+
+
+<p>
+You finally unlocked your special surprise...
+</p>
+
+
+<p>
+Someone prepared something beautiful
+just for you. ✨
+</p>
+
+
+<p>
+Are you ready? 👀💗
+</p>
+
+
+<button
+onclick="openSurprise()"
+>
+I'm Ready 💕 →
+</button>
+
+
+</div>
+
+
+<script>
+
+function openSurprise() {
+
+    window.location.href =
+        "${location.href}#surprise";
+
+}
+
+<\/script>
+
+
+</body>
+
+</html>
+
+            `);
+
+            newTab.document.close();
+
+        } else {
+
+            showPage("surprisePage");
+
+        }
+
+    } else {
+
+        error.style.display = "block";
+
+    }
+
+}
+
+
+/* =====================================================
+   PAGE NAVIGATION
+===================================================== */
+
+function showPage(pageId) {
+
+    document
+        .querySelectorAll(".page")
+        .forEach(page => {
+
+            page.classList.remove("active");
+
+        });
+
+
+    document
+        .getElementById(pageId)
+        .classList.add("active");
+
+
+    window.scrollTo(0, 0);
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function startConfetti() {
+
+    for (let i = 0; i < 150; i++) {
+
+        const confetti =
+            document.createElement("div");
+
+
+        confetti.classList.add(
+            "confetti"
+        );
+
+
+        confetti.style.left =
+            Math.random() * 100 + "vw";
+
+
+        confetti.style.animationDuration =
+            (Math.random() * 3 + 2) + "s";
+
+
+        confetti.style.background =
+            "hsl(" +
+            Math.random() * 360 +
+            ", 85%, 70%)";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            () => confetti.remove(),
+            5500
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   ENTER KEY
+===================================================== */
+
+document
+    .getElementById("password")
+    .addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Enter") {
+
+                checkPassword();
+
+            }
+
+        }
+    );
+
+
+/* =====================================================
+   SURPRISE URL
+===================================================== */
+
+if (
+    window.location.hash === "#surprise"
+) {
+
+    showPage("surprisePage");
+
+}
+
+</script>
+
+</body>
+</html>
